@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/fondo">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="47dp"
+        android:text="@string/universidad"
+        android:textSize="20dp" android:textColor="@color/negro"/>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:text="@string/ingenieria"
+        android:textColor="@color/negro"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="10dp"
+        android:text="@string/investigacion"
+        android:textColor="@color/negro"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:layout_marginTop="10dp"
+        android:text="@string/ing"
+        android:textColor="@color/negro"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="39dp"
+        android:layout_marginRight="47dp"
+        android:text="@string/nombre"
+        android:textColor="@color/negro"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TextView05"
+        android:layout_alignRight="@+id/TextView05"
+        android:text="@string/carne"
+        android:textColor="@color/negro"
+        android:textSize="20dp" android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/metodo"
+        android:textColor="@color/negro"
+        android:textSize="40dp" />
+
+</RelativeLayout>

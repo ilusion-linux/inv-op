@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Herramienta para investigacion de operaciones</string>
+    <string name="boton1">Simplex</string>
+    <string name="boton2">Transporte</string>
+    <string name="boton3">Asignacion</string>
+    <string name="boton4">Informacion</string>
+    <string name="titulo_transporte">Resolucion por metodo de transporte</string>
+    <string name="solicitud_var">Numero de variables</string>
+    <string name="solicitud_res">Numero de restricciones</string>
+    <string name="metodo_transporte">Metodo transporte</string>
+    <color name="fondo">#99b4d1</color>
+    <color name="negro">#000000</color>
+    <color name="opciones">#434c7f</color>
+    <color name="blanco">#ffffff</color>
+    <string-array name="metodos_transporte">
+        <item >Vogel</item>
+        <item >Costo minimo</item>
+        <item >Esquina nor oeste</item>
+    </string-array>
+    <string name="defecto">defecto</string>
+    <string name="radioboton1">Resumido</string>
+    <string name="radioboton2">Explicado</string>
+    <string name="mensaje_estado">Precione el boton siguiente para iniciar la resolucion</string>
+    <string name="universidad">Universidad Mariano Galvez</string>
+    <string name="ingenieria">Ingenieria en Sistema</string>
+    <string name="investigacion">Investigacion de Operaciones</string>
+    <string name="metodo">Metodo de Transporte</string>
+    <string name="ing">Ing. Alejandro Chinchilla</string>
+    <string name="carne">1190&#8211;07&#8211;14887</string>
+    <string name="nombre">Luis Alfredo Morales Franco</string>
+</resources>

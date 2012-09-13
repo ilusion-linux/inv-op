@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fondo" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/titulo_transporte"
+        android:textColor="@color/negro"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="@string/solicitud_var"
+        android:textColor="@color/negro"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="20dp"
+        android:text="@string/solicitud_res"
+        android:textColor="@color/negro"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/restriccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="38dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="@color/blanco"
+        android:ems="2"
+        android:height="10dp"
+        android:inputType="number"
+        android:textColor="@color/negro"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/variable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/restriccion"
+        android:layout_alignTop="@+id/TextView01"
+        android:background="@color/blanco"
+        android:ems="2"
+        android:height="10dp"
+        android:inputType="number"
+        android:textColor="@color/negro"
+        android:textSize="25dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/variable"
+        android:text="@string/metodo_transporte"
+        android:textColor="@color/negro"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/transportes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_alignTop="@+id/restriccion"
+        android:background="@color/opciones"
+        android:entries="@array/metodos_transporte"
+        android:minHeight="25dp"
+        android:minWidth="300dp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/restriccion"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:scrollbarSize="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TableLayout
+                        android:id="@+id/layout_matriz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/resolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/horizontalScrollView1"
+        android:layout_below="@+id/textView1"
+        android:background="@drawable/crear" />
+
+    <Button
+        android:id="@+id/limpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resolver"
+        android:layout_alignBottom="@+id/resolver"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@+id/resolver"
+        android:background="@drawable/limpiar"/>
+
+    <Button
+        android:id="@+id/solicitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/limpiar"
+        android:layout_marginRight="50dp"
+        android:layout_toLeftOf="@+id/limpiar"
+        android:background="@drawable/solicitar" />
+
+</RelativeLayout>
